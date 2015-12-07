@@ -5,7 +5,7 @@ ready = ->
       $.ajax
         url:      '/contacts.json?search=' + contact
         success:  (result) ->
-            $('.searches').html result[0].name + " " + result[0].phone
+            $('#_phone').val(result[0].phone)
     return
   return
 
