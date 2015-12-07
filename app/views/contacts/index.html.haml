@@ -1,3 +1,7 @@
-= render "search"
-
-.searches
+= form_for '' do |f|
+  %li
+    = f.label :name
+    = f.text_field :name
+  %li
+    = f.label :phone
+    = f.text_field :phone
